@@ -1,3 +1,13 @@
+import sys
+
+print(f"Python version: {sys.version}")
+
+try:
+    import imghdr
+    print("imghdr module found")
+except ImportError:
+    print("imghdr module NOT found")
+
 import os
 import requests
 from datetime import datetime, timedelta
